@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo"
+            android:src="@drawable/logo1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:padding="25dp"
+            android:text="LOGIN"
+            android:textColor="@color/purple_500"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:drawableStart="@drawable/ic_baseline"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="12dp"
+            android:hint="Enter email"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/teal_200" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:maxLength="6"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="16dp"
+            android:ems="15"
+            android:drawableStart="@drawable/ic_lock"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="@drawable/custom_input"
+            android:drawablePadding="12dp"
+            android:hint="password"
+            android:inputType="numberPassword"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#52afaa" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="25dp" >
+
+            <TextView
+                android:id="@+id/tv_crt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create new account"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:enabled="false"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>
